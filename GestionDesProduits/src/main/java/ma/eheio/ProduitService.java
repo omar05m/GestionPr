@@ -48,4 +48,14 @@ public class ProduitService {
 			afficherProduit(produit);
 		}
 	}
+    //supprimer un produits
+    public void supprimerProduit(Produit produit) {
+        if (produits.containsValue(produit)) {
+            produits.values().remove(produit);
+            System.out.println("produit supprime");
+        } else {
+            System.out.println("produit existe pas");
+        }
+    }
 }
+
