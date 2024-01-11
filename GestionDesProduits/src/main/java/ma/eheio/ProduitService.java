@@ -34,7 +34,6 @@ public class ProduitService {
 		} catch (IllegalArgumentException e) {
 			System.err.println("exeption : " + e.getMessage());
 		}
-
 	}
 
 	// afficher un seul produit
