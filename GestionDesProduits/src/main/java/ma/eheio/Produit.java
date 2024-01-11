@@ -13,7 +13,10 @@ public class Produit {
         this.prix = prix;
         this.qte = qte;
     }
-
+    @Override
+ 	public String toString() {
+ 		return "Produit"+ id +" [id=" + id + ", nom=" + nom + ", prix=" + prix + ", qte=" + qte + "]";
+ 	}
     public long getId() {
         return id;
     }
