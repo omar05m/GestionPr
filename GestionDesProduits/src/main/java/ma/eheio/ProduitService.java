@@ -4,17 +4,20 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import java.util.HashMap;
+import java.util.Map;
+
+
+
 public class ProduitService {
 	Map<Long, Produit> produits = new HashMap<Long, Produit>();
-
 	public void ajouterProduit(Produit produit) {
 		Long id = produit.getId();
 		String nom = produit.getNom();
 		double prix = produit.getPrix();
 		int qte = produit.getQte();
 		Optional<Produit> existingProductById = Optional.ofNullable(produits.get(id));
-		Optional<Produit> existingProductByName = produits.values().stream().filter(p -> p.getNom().equals(nom))
-				.findFirst();
+		Optional<Produit> existingProductByName = produits.values().stream().filter(p -> p.getNom().equals(nom)).findFirst();
 		try {
 			if (existingProductById.isPresent()) {
 				throw new IllegalArgumentException("Id du produit existe deja");
