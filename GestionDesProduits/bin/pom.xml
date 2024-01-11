@@ -13,6 +13,8 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+<<<<<<< HEAD
+=======
     <dependencies>
         <dependency>
             <groupId>junit</groupId>
@@ -21,5 +23,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+>>>>>>> b263dd5418923ca66d33796d4c04b5cd26bdb5eb
 
 </project>
